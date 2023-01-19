@@ -7,9 +7,125 @@
     <title>Ghumocar</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
     <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="../style/signup.css">
+    
+    <link rel="stylesheet" href="../style/Login.css">
+    <link rel="import" href="../signup.html">
+    <link rel="import" href="../Login.html">
 
 </head>
 <body>
+
+
+    <!-- log in -->
+    <!-- <div class="logpopup" id="logpopup">
+        <div id="loghead">
+            <div id="logsignIn_head">
+                <h1>LOG IN</h1>
+                <h3>NEW TO AVIS?</h3>
+                <a href="./signup.html">SIGN UP</a>
+            </div>
+            <div id="logcross-cont">
+                <p id="logcross" onclick="logclosePopup()">⨉</p>
+            </div>
+        </div>
+
+        <form action="" id="logform">
+            <input type="email" placeholder="email" name="femail" id="logemail"><span id="logemail_error"></span>
+
+            <input type="password" placeholder="PASSWORD" name="fpassword" id="logpassword"><span
+                id="logpassword_error"></span>
+
+            <input id="logLogin_but" type="submit" value="LOG IN">
+        </form>
+        <h3 id="logor">---OR---</h3>
+        <div id="logFb_Gog_but">
+
+            <button id="loggoogle">
+                <div>
+                    <b>
+                        <p>G</p>
+                    </b>
+                </div>
+                <div class="loganchor"><a href="">LOG IN WITH GOOGLE</a></div>
+            </button>
+            <button id="logfacebook">
+                <div>
+                    <b>
+                        <p>f</p>
+                    </b>
+                </div>
+                <div class="loganchor"><a href="">LOG IN WITH FACEBOOK</a></div>
+            </button>
+        </div>
+
+    </div> -->
+
+
+<!-- sign up -->
+    <!-- <div class="popup" id="popup">
+        <div id="head">
+            <div id="signUp_head">
+                <h1>SIGN UP</h1>
+                <h3>ALREADY REGISTERED?</h3>
+                <a href="./Login.html">LOG IN</a>
+            </div>
+            <div id="cross-cont">
+             <p id="cross" onclick="closePopup()">⨉</p>
+            </div>
+        </div>
+      
+     
+        <form action="" id="form">
+
+            <input type="text" placeholder="FIRST NAME" name="ffirst_name" id="firstname"><span id="first_error"></span>
+
+            <input type="text" placeholder="LAST NAME" name="flast_name" id="lastname"><span id="last_error"></span>
+
+            <input type="email" placeholder="email" name="femail" id="email"><span id="email_error"></span>
+
+            <input type="number" placeholder="MOBILE NO." name="fmobile" id="mobile"><span id="mobile_error"></span>
+
+            <input type="date" placeholder="DOB" name="fbirth_date" id="birthdate"><span id="date_error"></span> <br>
+
+            <input type="radio" name="gender" id="gender" value="male"><label for="">MALE</label><br>
+            <input type="radio" name="gender" id="gender" value="female"><label for="">FEMALE</label><br>
+            <span id="gender_error"></span>
+
+            <input type="password" placeholder="PASSWORD" name="fpassword" id="password"><span
+                id="password_error"></span>
+
+            <input type="password" placeholder="CONFIRM PASSWORD" name="fcpasspwrd" id="cpassword"><span
+                id="cpassword_error"></span>
+
+            <input id="signup_but" type="submit" value="SIGN UP">
+        </form>
+        <h3 id="or">---OR---</h3>
+        <div id="Fb_Gog_but">
+
+            <button id="google">
+                <div>
+                    <b>
+                        <p>G</p>
+                    </b>
+                </div>
+                <div class="anchor"><a href="">LOG IN WITH GOOGLE</a></div>
+            </button>
+            <button id="facebook">
+                <div>
+                    <b>
+                        <p>f</p>
+                    </b>
+                </div>
+                <div class="anchor"><a href="">LOG IN WITH FACEBOOK</a></div>
+            </button>
+        </div>
+
+
+    </div> -->
+    
+
+    
     <div class="header_login_signup maincolor">
         <div class="avis_logo">
             <H1>Avis Logo</H1>
@@ -34,9 +150,12 @@
                 
                
             </div>
-            <div class="LOGIN_SIGNUP"><a href="#">SIGN UP</a>
-            <a href="#">/LOG IN</a></div>
-            
+            <div class="LOGIN_SIGNUP">
+            <a onclick="logopenPopup()"  href="#">SIGN UP</a>
+             
+            <a onclick="openPopup()"  href="#">/LOG IN</a></div>
+            </div>
+
             
             
             

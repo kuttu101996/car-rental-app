@@ -12,58 +12,58 @@
 
 <body>
 
-    <div class="popup" id="popup">
-        <div id="head">
-            <div id="signIn_head">
+    <div class="logpopup" id="logpopup">
+        <div id="loghead">
+            <div id="logsignIn_head">
                 <h1>LOG IN</h1>
                 <h3>NEW TO AVIS?</h3>
                 <a href="./signup.html">SIGN UP</a>
             </div>
-            <div id="cross-cont">
-                <p id="cross" onclick="closePopup()">⨉</p>
+            <div id="logcross-cont">
+                <p id="logcross" onclick="logclosePopup()">⨉</p>
             </div>
         </div>
 
-        <form action="" id="form">
-            <input type="email" placeholder="email" name="femail" id="email"><span id="email_error"></span>
+        <form action="" id="logform">
+            <input type="email" placeholder="email" name="femail" id="logemail"><span id="logemail_error"></span>
 
-            <input type="password" placeholder="PASSWORD" name="fpassword" id="password"><span
-                id="password_error"></span>
+            <input type="password" placeholder="PASSWORD" name="fpassword" id="logpassword"><span
+                id="logpassword_error"></span>
 
-            <input id="Login_but" type="submit" value="LOG IN">
+            <input id="logLogin_but" type="submit" value="LOG IN">
         </form>
-        <h3 id="or">---OR---</h3>
-        <div id="Fb_Gog_but">
+        <h3 id="logor">---OR---</h3>
+        <div id="logFb_Gog_but">
 
-            <button id="google">
+            <button id="loggoogle">
                 <div>
                     <b>
                         <p>G</p>
                     </b>
                 </div>
-                <div class="anchor"><a href="">LOG IN WITH GOOGLE</a></div>
+                <div class="loganchor"><a href="">LOG IN WITH GOOGLE</a></div>
             </button>
-            <button id="facebook">
+            <button id="logfacebook">
                 <div>
                     <b>
                         <p>f</p>
                     </b>
                 </div>
-                <div class="anchor"><a href="">LOG IN WITH FACEBOOK</a></div>
+                <div class="loganchor"><a href="">LOG IN WITH FACEBOOK</a></div>
             </button>
         </div>
 
     </div>
 
-    <button id="clickme" onclick="openPopup()">Click Me</button>
+    <button id="clickme" onclick="logopenPopup()">Click Me</button>
 </body>
 <script>
 
-    let myform = document.getElementById("form")
+    let myform = document.getElementById("logform")
 
-    let email_error = document.getElementById("email_error")
+    let email_error = document.getElementById("logemail_error")
 
-    let password_error = document.getElementById("password_error")
+    let password_error = document.getElementById("logpassword_error")
 
 
     myform.addEventListener("submit", (e) => {
@@ -108,7 +108,7 @@
                 if (flag == true) {
                      localStorage.setItem("loginUser",JSON.stringify(element))
                     alert(`Congratulation ${element.firstname} ${element.lastname}, Explore your dream journey with GhumOCaR`)
-                    location.href = "./home.html"
+                    location.href = "./homepage.html"
                 } else {
                     password_error.innerHTML = "Username and password may be incorrect!"
                 }
@@ -117,13 +117,14 @@
     }
 
 
-    let popup = document.getElementById("popup");
+    let popup = document.getElementById("logpopup");
 
-    function openPopup() {
-        popup.classList.add("open-popup");
+    function logopenPopup() {
+        popup.classList.add("logopen-popup");
+        console.log("hello")
     }
-    function closePopup() {
-        popup.classList.remove("open-popup");
+    function logclosePopup() {
+        popup.classList.remove("logopen-popup");
     }
 
 

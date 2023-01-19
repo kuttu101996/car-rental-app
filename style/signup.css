@@ -24,7 +24,8 @@ body {
 
 .popup{
     width: 40%;
-    background: linear-gradient(90deg,#36879b,#6698d1,rgb(70, 159, 159));
+    /* background: linear-gradient(90deg,#36879b,#6698d1,rgb(70, 159, 159)); */
+    background-color: #FFFFFF;
     padding-bottom: 2%;
     position: absolute;
     top: 0%;
@@ -72,7 +73,7 @@ body {
 
 }
 
-input {
+#form input {
     height: 2.5rem;
     width: 100%;
     margin-top: 8%;
@@ -144,13 +145,13 @@ span {
     color: red;
 }
 
-#clickme {
+/* #clickme {
     display: block;
     color: red;
     font-size: 30px;
     position: absolute;
     top: 10px;
-}
+} */
  /* for medium screen */
 @media screen and (min-width:641px) and (max-width:1007px) {
     .popup{

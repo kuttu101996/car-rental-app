@@ -3,12 +3,12 @@ body {
 }
 
 
-#head {
+#loghead {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12%;
 }
-#cross-cont{
+#logcross-cont{
     /* border:1px solid red; */
   width:10%;
   display: flex;
@@ -16,14 +16,14 @@ body {
 
 }
 
-#cross {
+#logcross {
    margin-top: -20%;
     font-size: 40px;
     color: rgb(41, 39, 39);
     cursor: pointer;
 }
 
-.popup {
+.logpopup {
     width: 40%;
     background: linear-gradient(90deg, #89c8d8, #9ca0a5, rgb(101, 225, 225));
     padding-bottom: 3%;
@@ -38,7 +38,7 @@ body {
     transition: transform 0.4s, top 0.4s;
 }
 
-.open-popup {
+.logopen-popup {
     visibility: visible;
     top: 35%;
     transform: translate(-50%, -30%) scale(1);
@@ -46,7 +46,7 @@ body {
 }
 
 
-#signIn_head {
+#logsignIn_head {
 
     width:90%;
     /* border: 1px solid blue; */
@@ -57,26 +57,26 @@ body {
 
 }
 
-#signIn_head>h3 {
+#logsignIn_head>h3 {
     display: inline;
     color: black;
 }
 
-#signIn_head>a {
+#logsignIn_head>a {
     text-decoration: none;
     color: red;
 }
 
 
 
-#form {
+#logform {
     /* border:2px dashed red; */
     width: 85%;
     margin: auto;
 
 }
 
-input {
+#logform input {
     height: 2.5rem;
     width: 100%;
     margin-top: 8%;
@@ -85,22 +85,14 @@ input {
     display: block
 }
 
-#form #gender {
-
-    height: 1rem;
-    width: 10%;
-    display: inline;
-
-}
-
-#Login_but {
+#logLogin_but {
     border: 1px solid red;
     color: red;
     font-weight: 600;
     background: none;
 }
 
-#Fb_Gog_but {
+#logFb_Gog_but {
     /* border:1px solid green; */
     width: 85%;
     margin: auto;
@@ -109,7 +101,7 @@ input {
 
 }
 
-#google {
+#loggoogle {
     background-color: #dd4a39;
     display: flex;
     justify-content: space-around;
@@ -119,7 +111,7 @@ input {
     font-size: 80%;
 }
 
-#facebook {
+#logfacebook {
     background-color: #3b5a95;
     display: flex;
     justify-content: space-around;
@@ -137,20 +129,13 @@ h3 {
     color: rgb(69, 66, 66);
 }
 
-#facebook {
-    background-color: #3b5a95;
 
-}
 
-#google {
-    background-color: #dd4a39;
-}
-
-.anchor {
+.loganchor {
     margin-top: 6%;
 }
 
-.anchor>a {
+.loganchor>a {
     text-decoration: none;
     font-weight: 500;
     color: white
@@ -170,62 +155,62 @@ span {
 
  /* for medium screen */
 @media screen and (min-width:641px) and (max-width:1007px) {
-    .popup {
+    .logpopup {
         width: 90%;
         margin-top: 10%;
     }
 
-    #Fb_Gog_but {
+    #logFb_Gog_but {
         display: flex;
         justify-content: space-between;
     }
 
-    #facebook {
+    #logfacebook {
         width: 48%;
         margin: auto;
         margin-top: 10%;
 
     }
 
-    #google {
+    #loggoogle {
         width: 48%;
         margin: auto;
         margin-top: 10%;
 
     }
 
-    #signIp_head {
+    #logsignIp_head {
         width: 92%;
 
     }
 
-    #signIp_head>h3 {
+    #logsignIp_head>h3 {
         display: block;
 
     }
 
-    .anchor {
+    .loganchor {
         margin-top: 2%;
     }
 }
  /* for small screen */
 @media screen and (max-width:640px) {
-    .popup {
+    .logpopup {
         width: 90%;
     }
 
-    #Fb_Gog_but {
+    #logFb_Gog_but {
         display: block;
     }
 
-    #facebook {
+    #logfacebook {
         width: 90%;
         margin: auto;
         margin-top: 10%;
 
     }
 
-    #google {
+    #loggoogle {
         width: 90%;
         margin: auto;
     }
@@ -234,12 +219,12 @@ span {
         width: 85%;
     }
 
-    #signIp_head>h3 {
+    #logsignIp_head>h3 {
         display: block;
 
     }
 
-    .anchor {
+    .loganchor {
         margin-top: 5%;
     }
 }
